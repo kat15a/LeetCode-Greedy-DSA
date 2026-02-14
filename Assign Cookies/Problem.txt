@@ -1,0 +1,30 @@
+Problem: Assign Cookies
+
+Problem Statement:
+You are given two integer arrays g and s.
+
+- g[i] represents the greed factor of the ith child.
+- s[j] represents the size of the jth cookie.
+
+Each child can receive at most one cookie.
+A child will be content if the size of the cookie is greater than or equal to their greed factor.
+
+Task:
+Return the maximum number of children that can be content.
+
+Approach:
+- Sort both arrays.
+- Use two pointers to iterate through children and cookies.
+- Assign the smallest possible cookie that satisfies a child.
+- Move pointers accordingly.
+
+Algorithm Used:
+- Sorting
+- Two Pointer Technique
+- Greedy Strategy
+
+Time Complexity:
+- O(N log N + M log M)
+
+Space Complexity:
+- O(1)
