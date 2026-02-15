@@ -1,0 +1,30 @@
+Problem: Jump Game II
+
+Problem Statement:
+You are given an integer array nums.
+
+Each element nums[i] represents your maximum jump length at that position.
+
+You are initially positioned at index 0.
+
+Task:
+Return the minimum number of jumps required to reach the last index.
+It is guaranteed that you can reach the last index.
+
+Approach:
+- Use recursion to explore all possible jumps from each index.
+- Use memoization (DP array) to store results of previously computed indices.
+- From each index:
+    - Try all possible jumps (1 to nums[i]).
+    - Take the minimum number of jumps among all options.
+- Store and reuse results to avoid recomputation.
+
+Algorithm Used:
+- Recursion
+- Dynamic Programming (Top-Down / Memoization)
+
+Time Complexity:
+- O(N²) (worst case)
+
+Space Complexity:
+- O(N) (DP array + recursion stack)
