@@ -1,0 +1,37 @@
+Problem: Lemonade Change
+
+Problem Statement:
+At a lemonade stand, each lemonade costs $5.
+
+Customers are standing in a queue and pay using:
+- $5
+- $10
+- $20 bills
+
+You must provide correct change to each customer.
+
+Initially, you have no change.
+
+Task:
+Return true if you can provide change to every customer.
+Otherwise, return false.
+
+Approach:
+- Maintain counters for $5 and $10 bills.
+- For each customer:
+  - If bill is $5 → increase five count.
+  - If bill is $10 → give one $5 as change.
+  - If bill is $20:
+      - Prefer giving one $10 and one $5.
+      - Otherwise give three $5 bills.
+      - If not possible, return false.
+
+Algorithm Used:
+- Greedy Strategy
+- Simulation
+
+Time Complexity:
+- O(N)
+
+Space Complexity:
+- O(1)
