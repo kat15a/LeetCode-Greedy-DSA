@@ -1,0 +1,39 @@
+Problem: Valid Parenthesis String
+
+Problem Statement:
+You are given a string s containing three types of characters:
+- '('
+- ')'
+- '*'
+
+The '*' character can be treated as:
+- '('
+- ')'
+- An empty string
+
+Task:
+Return true if the string can be a valid parenthesis string.
+Otherwise, return false.
+
+Approach:
+- Use recursion with two parameters:
+    - Current index
+    - Current count of open brackets
+- If count becomes negative → invalid.
+- If end of string is reached → valid only if count is 0.
+- Use a 2D DP array to memoize results:
+    - dp[index][openCount]
+- For '*', try all three possibilities:
+    - Treat as '('
+    - Treat as ')'
+    - Treat as empty
+
+Algorithm Used:
+- Recursion
+- Dynamic Programming (Top-Down / Memoization)
+
+Time Complexity:
+- O(N²)
+
+Space Complexity:
+- O(N²)
