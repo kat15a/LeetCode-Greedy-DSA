@@ -1,0 +1,28 @@
+Problem: Jump Game
+
+Problem Statement:
+You are given an integer array nums.
+
+Each element nums[i] represents your maximum jump length at that position.
+
+Initially, you are positioned at index 0.
+
+Task:
+Return true if you can reach the last index.
+Otherwise, return false.
+
+Approach:
+- Maintain a variable maxReach to track the farthest reachable index.
+- Traverse the array:
+    - If the current index is greater than maxReach, return false.
+    - Update maxReach as max(maxReach, i + nums[i]).
+- If traversal completes, return true.
+
+Algorithm Used:
+- Greedy Strategy
+
+Time Complexity:
+- O(N)
+
+Space Complexity:
+- O(1)
